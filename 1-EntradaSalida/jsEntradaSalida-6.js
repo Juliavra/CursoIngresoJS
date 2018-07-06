@@ -1,6 +1,8 @@
 /*Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
+
+/*
 function sumar()
 {
   var numeroUno;
@@ -22,4 +24,25 @@ alert ("el resultado de la suma es "+ resultadoSuma);
   //console.log ( numeroDos);
   
 }
+*/
 
+
+function sumar()
+{
+  var numeroUno;
+  var numeroDos;
+  var resultado;
+
+  numeroUno="6";
+  numeroDos=6;
+
+  numeroUno=document.getElementById('numeroUno').value;
+  numeroUno=parseInt (numeroUno);
+
+  numeroDos=document.getElementById('numeroDos').value;
+  numeroDos=parseInt (numeroDos);  
+
+
+  resultado=numeroUno+numeroDos;
+  alert (resultado);
+}
