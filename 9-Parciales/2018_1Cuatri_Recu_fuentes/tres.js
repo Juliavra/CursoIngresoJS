@@ -19,12 +19,14 @@ function mostrar()
 
 	precio= prompt ("ingrese el precio: ");
 	descuento= prompt ("ingrese el porcentaje de descuento: ");
+	
+
 	iva=(precio*21)/100;
 	totalDescuento=(precio*descuento)/100;
 
 	precioFinal=precio-descuento
 	alert ("El precio es: "+precio + "   El descuento es: "+ totalDescuento + "     El IVA es: "+iva);
 
-	precioFinal=document.getElementById('elPrecioFinal').value;
+	document.getElementById('elPrecioFinal').value=precioFinal;
 
 }
