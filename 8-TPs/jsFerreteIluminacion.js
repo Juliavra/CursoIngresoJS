@@ -8,7 +8,133 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
+
+
+
+
 function CalcularPrecio () 
 {
- 	
+ 
+	var cantidad;
+	var precio=35;
+	var precioConDescuento;
+	var marca;
+	var ingresosBrutos;
+	var descuento;
+
+	cantidad=document.getElementById('Cantidad').value;
+	marca=document.getElementById('Marca').value;
+
+
+if (cantidad >=6){			descuento=0.5;
+					
+					}		
+	
+
+	else if (cantidad ==5){ 
+							if (marca=="ArgentinaLuz"){descuento=0.6;
+							}
+								else precioConDescuento= descuento=0.7;
+							}
+
+		else if (cantidad ==4) { 
+							if (marca=="ArgentinaLuz" || marca=="FelipeLamparas"){descuento=0.75;
+								
+							}
+								else descuento=0.8;
+									
+							}
+
+	else if (cantidad ==3) { 
+							if (marca=="ArgentinaLuz"){descuento=0.85;
+								
+							}
+								
+								else if (marca=="FelipeLamparas")descuento=0.9;
+								
+							}
+
+
+
+								else precioConDescuento= descuento=0.95
+							}
+
+
+						if (precioConDescuento>120) { ingresosBrutos=precioConDescuento*0.1;
+														document.getElementById('precioDescuento').value=precioConDescuento+ingresosBrutos;
+														alert("Usted pago "+ingresosBrutos+" de IIBB."); }
+
+				precioConDescuento= (cantidad*precio)*descuento+(cantidad*precio);
+				document.getElementById('precioDescuento').value=precioConDescuento;
+
+
 }
+
+
+
+
+
+
+
+
+/*
+
+function CalcularPrecio () 
+{
+ 
+	var cantidad;
+	var precio=35;
+	var precioConDescuento;
+	var marca;
+	var ingresosBrutos;
+
+	cantidad=document.getElementById('Cantidad').value;
+	marca=document.getElementById('Marca').value;
+
+
+if (cantidad >=6){
+
+					precioConDescuento= (cantidad*precio)*0.5;
+					document.getElementById('precioDescuento').value=precioConDescuento;}		
+	
+
+	else if (cantidad ==5){ 
+							if (marca=="ArgentinaLuz"){precioConDescuento=(cantidad*precio)*0.6;
+								document.getElementById('precioDescuento').value=precioConDescuento;
+							}
+								else precioConDescuento= (cantidad*precio)*0.7;
+									document.getElementById('precioDescuento').value=precioConDescuento;
+							}
+
+		else if (cantidad ==4) { 
+							if (marca=="ArgentinaLuz" || marca=="FelipeLamparas"){precioConDescuento=(cantidad*precio)*0.75;
+								document.getElementById('precioDescuento').value=precioConDescuento;
+							}
+								else precioConDescuento= (cantidad*precio)*0.8;
+									document.getElementById('precioDescuento').value=precioConDescuento;
+							}
+
+	else if (cantidad ==3) { 
+							if (marca=="ArgentinaLuz"){precioConDescuento=(cantidad*precio)*0.85;
+								document.getElementById('precioDescuento').value=precioConDescuento;
+							}
+								
+								else if (marca=="FelipeLamparas"){precioConDescuento=(cantidad*precio)*0.9;
+								document.getElementById('precioDescuento').value=precioConDescuento;
+							}
+
+
+
+								else precioConDescuento= (cantidad*precio)*0.95;
+									document.getElementById('precioDescuento').value=precioConDescuento;
+							}
+
+
+						if (precioConDescuento>120) { ingresosBrutos=precioConDescuento*0.1;
+														document.getElementById('precioDescuento').value=precioConDescuento+ingresosBrutos;
+														alert("Usted pago "+ingresosBrutos+" de IIBB."); }
+
+
+}
+
+*/
