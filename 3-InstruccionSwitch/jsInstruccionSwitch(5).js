@@ -19,5 +19,5 @@ switch (laHora) {
 			break;
 		default:
 		alert ("No Es de mañana.");
-		}
+			break;}
 }//FIN DE LA FUNCIÓN
