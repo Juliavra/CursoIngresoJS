@@ -1,7 +1,29 @@
+//al presionar el botón pedir un número entre 0 y 9 inclusive.
+
+
+
+
+/*
 function mostrar()
 {
+					
+		var numero;
+	
+	var numero = prompt("ingrese un número entre 0 y 9.");
 
-	var numero = prompt("ingrese un número entre 0 y 10.");
+
+		while (numero>=0 && numero <=9)
+			{
+			alert (numero);
+			document.getElementById('Numero').value=numero;
+			}		
+			 alert ("El numero ingesado no esta comprendido entre 0 y 9."+"Ud 
+
+ingreso: "+numero); 
 
 
-}//FIN DE LA FUNCIÓN
+
+
+			}//FIN DE LA FUNCIÓN
+
+*/
