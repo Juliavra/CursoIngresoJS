@@ -3,27 +3,51 @@
 
 
 
-/*
+
 function mostrar()
 {
 					
 		var numero;
 	
-	var numero = prompt("ingrese un número entre 0 y 9.");
+	 numero = prompt("ingrese un número entre 0 y 9");
+
+
+		while (numero<0 || numero >9)
+			{
+			//alert (numero);
+			
+
+			alert ("El numero ingesado no esta comprendido entre 0 y 9."+"Ud ingreso: "+numero);
+			}		
+			  
+
+			document.getElementById('Numero').value=numero;
+
+
+			}//FIN DE LA FUNCIÓN
+
+
+
+/*
+
+function mostrar()
+{
+					
+		var numero;
+	
+	 numero = prompt("ingrese un número entre 0 y 9");
 
 
 		while (numero>=0 && numero <=9)
 			{
-			alert (numero);
+			//alert (numero);
 			document.getElementById('Numero').value=numero;
 			}		
-			 alert ("El numero ingesado no esta comprendido entre 0 y 9."+"Ud 
-
-ingreso: "+numero); 
+			 alert ("El numero ingesado no esta comprendido entre 0 y 9."+"Ud ingreso: "+numero); 
 
 
 
 
 			}//FIN DE LA FUNCIÓN
 
-*/
+			*/

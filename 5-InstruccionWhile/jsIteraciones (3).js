@@ -1,4 +1,4 @@
-//al presionar el botón pedir la CLAVE (ayuda: es utn750)
+	//al presionar el botón pedir la CLAVE (ayuda: es utn750)
 
 function mostrar()
 {
